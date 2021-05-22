@@ -30,7 +30,7 @@ export TERM=xterm-256color
 eval `dircolors ~/.dir_colors`
 
 # End of lines added by compinstall
-source /opt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/featherOS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
