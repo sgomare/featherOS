@@ -15,7 +15,7 @@ dwm_weather() {
         export __DWM_BAR_WEATHER__="${SEP1} ${DATA} ${SEP2}" 
     else
         DATA=$(curl -s wttr.in/$LOCATION?format=1 | grep -o ".[0-9].*")
-        export __DWM_BAR_WEATHER__="${SEP1}  ${DATA} ${SEP2}"
+        export __DWM_BAR_WEATHER__="${SEP1} WEA ${DATA} ${SEP2}"
     fi
 }
 
