@@ -10,7 +10,6 @@ fi
 apt -y install build-essential libx11-dev libxinerama-dev libxft-dev \
                git wget xinit xserver-xorg zsh x11-xserver-utils \
 	       fonts-font-awesome chromium curl
-git clone https://github.com/sgomare/featherOS.git /opt/featherOS/ 
 cd /opt/featherOS/dwm-6.2/
 make clean install
 make clean
