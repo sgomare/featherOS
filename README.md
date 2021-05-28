@@ -1,3 +1,3 @@
 # featherOS
-A lightweight Arch and dwm window manager based Operating System.
+A lightweight dwm window manager based Operating System.
 
