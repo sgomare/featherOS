@@ -42,7 +42,7 @@ dwmstatus 2>&1 > /dev/null &
 nitrogen --restore &
 
 #Compositor
-picom -f &
+compton -b &
 
 #loop 
 while true; do
