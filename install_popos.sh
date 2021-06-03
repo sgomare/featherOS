@@ -29,5 +29,7 @@ make clean
 cd ../
 chsh -s /bin/zsh $varuser
 cp .zshrc /home/$varuser/.zshrc
+chown $varuser.$varuser /home/$varuser/.zshrc
 cp .xinitrc /home/$varuser/.xinitrc
-cp ./dircolors-solarized/dircolors.256dark /home/$varuser/.dir_colors 
+chown $varuser.$varuser /home/$varuser/.xinitrc
+cp ./dircolors-solarized/dircolors.256dark /home/$varuser/.dir_colors
