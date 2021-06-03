@@ -11,7 +11,7 @@ apt --allow-remove-essential -y purge pop-desktop gnome-shell
 apt -y autoremove
 apt -y install build-essential libx11-dev libxinerama-dev libxft-dev \
                git wget xinit xserver-xorg zsh x11-xserver-utils \
-	       fonts-font-awesome chromium curl compton
+	       fonts-font-awesome chromium curl compton nitrogen
 cp ./blacklistpopos /etc/apt/preferences.d/
 cp ./blacklistgnome /etc/apt/preferences.d/
 cd /opt/featherOS/dwm-6.2/
