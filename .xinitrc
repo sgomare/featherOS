@@ -34,8 +34,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  done
  unset f
 fi
-$dwmstatus
-dwmstatus 2>&1 > /dev/null &
+#$dwmstatus
+#dwmstatus 2>&1 > /dev/null &
 /opt/featherOS/dwm-bar/dwm_bar.sh &
 
 # Restore wallpaper
