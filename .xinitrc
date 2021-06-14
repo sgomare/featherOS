@@ -42,7 +42,7 @@ fi
 nitrogen --restore &
 
 #Compositor
-picom -f &
+compton -b &
 
 #loop 
 while true; do

@@ -1,0 +1,3 @@
+Package: gnome-shell
+Pin: release *
+Pin-Priority: -1

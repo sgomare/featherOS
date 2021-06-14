@@ -7,9 +7,13 @@ if [ $? -ne 0 ]; then
 	echo "The user is not valid"
 	exit -1
 fi
+apt --allow-remove-essential -y purge pop-desktop gnome-shell
+apt -y autoremove
 apt -y install build-essential libx11-dev libxinerama-dev libxft-dev \
                git wget xinit xserver-xorg zsh x11-xserver-utils \
 	       fonts-font-awesome chromium curl compton nitrogen
+cp ./blacklistpopos /etc/apt/preferences.d/
+cp ./blacklistgnome /etc/apt/preferences.d/
 cd /opt/featherOS/dwm-6.2/
 make clean install
 make clean
