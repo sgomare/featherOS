@@ -1,0 +1,2 @@
+xinput set-prop 'DLL082A:01 06CB:76AF Touchpad' 'libinput Tapping Enabled' 1 &
+xrandr --output eDP-1 --scale 0.5x0.5 &
