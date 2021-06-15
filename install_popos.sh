@@ -23,9 +23,6 @@ make clean
 cd ../dmenu-5.0
 make clean install
 make clean
-cd ../dwmstatus
-make clean install
-make clean
 cd ../
 chsh -s /bin/zsh $varuser
 cp .zshrc /home/$varuser/.zshrc
