@@ -4,12 +4,12 @@ echo "Please enter the username"
 read varuser
 id -u $varuser > /dev/null
 if [ $? -ne 0 ]; then
-	echo "The user is not valid"
-	exit -1
+        echo "The user is not valid"
+        exit -1
 fi
 apt -y install build-essential libx11-dev libxinerama-dev libxft-dev \
                git wget xinit xserver-xorg zsh x11-xserver-utils \
-	       fonts-font-awesome chromium curl compton nitrogen
+               fonts-font-awesome chromium curl compton nitrogen
 cd /opt/featherOS/dwm-6.2/
 make clean install
 make clean
@@ -17,6 +17,9 @@ cd ../st-0.8.4
 make clean install
 make clean
 cd ../dmenu-5.0
+make clean install
+make clean
+cd ../slstatus
 make clean install
 make clean
 cd ../
