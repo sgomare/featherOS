@@ -7,6 +7,16 @@ if [ $? -ne 0 ]; then
 	echo "The user is not valid"
 	exit -1
 fi
+VERSION=$(awk '/VERSION_ID=/' /etc/os-release | sed 's/VERSION_ID=//')
+VERSION="${VERSION%\"}"
+VERSION="${VERSION#\"}"
+
+VALID="20.04"
+if [ "$VERSION" != "$VALID" ]; then
+        echo "The cuurent OS version is not supported"
+        exit -1
+fi
+
 apt --allow-remove-essential -y purge pop-desktop gnome-shell
 apt -y autoremove
 apt -y install build-essential libx11-dev libxinerama-dev libxft-dev \
